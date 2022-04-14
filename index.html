@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>Monster Slayer</h1>
+        <h1>Monster Attack</h1>
     </header>
     <div id="game">
         <section id="monster" class="container">
@@ -23,15 +23,15 @@
             </div>
         </section>
         <section id="player" class="container">
-            <h2>Your Health {{playerHealth+'%'}}</h2>
+            <h2>Player Health {{playerHealth+'%'}}</h2>
             <div class="healthbar">
                 <div class="healthbar__value" :style="playerBarStyle"></div>
             </div>
         </section>
         <section id="controls">
             <button @click="attackMonster">ATTACK</button>
-            <button :disabled="canUseSpecialAttack" @click="specialAttack">SPECIAL ATTACK</button>
-            <button @click="healPlayer">HEAL</button>
+            <button :disabled="canUseSpecialAttack" @click="specialAttack">SPECIAL Power</button>
+            <button @click="healPlayer">HEAL Player</button>
             <button>SURRENDER</button>
         </section>
         <section id="log" class="container">
